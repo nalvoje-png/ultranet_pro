@@ -1,0 +1,5 @@
+{
+  "name": "UltraNet",
+  "description": "A web application for UltraNet's refer-a-friend promotion, where existing customers can refer new customers to earn a free month of internet service. It includes a Gemini-powered feature to generate personalized referral messages.",
+  "requestFramePermissions": []
+}
