@@ -23,7 +23,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen font-sans text-gray-800">
+    <div className="bg-slate-900 min-h-screen font-sans text-slate-200">
       <Header currentPage={currentPage} setPage={setCurrentPage} />
       <main>{renderPage()}</main>
       <Footer />

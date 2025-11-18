@@ -9,11 +9,11 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ title, children })
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-slate-700">
       <h2>
         <button
           type="button"
-          className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 hover:bg-gray-50 px-2"
+          className="flex items-center justify-between w-full py-5 font-medium text-left text-slate-200 hover:bg-slate-700/50 px-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
         >
@@ -38,7 +38,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ title, children })
         } grid`}
       >
         <div className="overflow-hidden">
-          <div className="py-5 px-2 text-gray-600">
+          <div className="py-5 px-2 text-slate-300">
             {children}
           </div>
         </div>
@@ -52,7 +52,7 @@ interface AccordionProps {
 }
 
 const Accordion: React.FC<AccordionProps> = ({ children }) => {
-  return <div className="divide-y divide-gray-200">{children}</div>;
+  return <div className="divide-y divide-slate-700">{children}</div>;
 };
 
 export default Accordion;

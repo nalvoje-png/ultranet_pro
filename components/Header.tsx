@@ -25,7 +25,7 @@ const NavLink: React.FC<{
       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
         isActive
           ? 'text-white bg-teal-500'
-          : 'text-gray-700 hover:bg-gray-200 hover:text-gray-900'
+          : 'text-slate-300 hover:bg-slate-700 hover:text-white'
       }`}
       aria-current={isActive ? 'page' : undefined}
     >
@@ -36,7 +36,7 @@ const NavLink: React.FC<{
 
 const Header: React.FC<HeaderProps> = ({ currentPage, setPage }) => {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <button onClick={() => setPage('home')} className="cursor-pointer" aria-label="Go to homepage">
           <Logo />

@@ -4,7 +4,7 @@ import Button from './ui/Button';
 import { Page } from '../App';
 
 const StepIcon: React.FC<{ icon: string }> = ({ icon }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-teal-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-teal-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
     <path strokeLinecap="round" strokeLinejoin="round" d={icon} />
   </svg>
 );
@@ -33,15 +33,15 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ setPage }) => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-black/20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Como Funciona?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Como Funciona?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <Card key={index} className="text-center flex flex-col items-center">
               <StepIcon icon={step.icon} />
-              <h3 className="text-xl font-bold mb-2 text-gray-800">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+              <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
+              <p className="text-slate-300">{step.description}</p>
             </Card>
           ))}
         </div>

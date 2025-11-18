@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
         fontFamily="Arial, sans-serif" 
         fontSize="40" 
         fontWeight="bold" 
-        fill="#423f9d"
+        fill="#FFFFFF"
       >
         Ultranet
       </text>
